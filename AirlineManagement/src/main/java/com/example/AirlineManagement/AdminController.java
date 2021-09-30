@@ -11,6 +11,12 @@ public class AdminController {
 	ArrayList<Airline> flightList = new ArrayList<Airline>();
 	Airline newFlight = new Airline();
 	
+	@RequestMapping("/api/v1.0/flight/admin/login")
+	@PostMapping
+	void adminLogin() {
+		System.out.println("valid user");
+	}
+	
 	
 	@RequestMapping("/api/v1.0/flight/airline/register")
 	@PostMapping
